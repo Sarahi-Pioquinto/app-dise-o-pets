@@ -47,7 +47,6 @@
       
     </ion-toolbar>
   </ion-header>
-  
     
   
     <ion-content [fullscreen]=true >
@@ -78,78 +77,53 @@
 
             <ion-segment value="all" perro="perro">
             <ion-segment-button value="all">
-                Perro
+                Mascota
             </ion-segment-button>
             <ion-segment-button value="favorites">
-                Gato
+                Marca
             </ion-segment-button>
             <ion-segment-button value="conejo">
-                Conejo
+                Accesorios
             </ion-segment-button>
             </ion-segment>
         </ion-toolbar>
+        <ion-toolbar>
+          
+          <ion-card>
+            
+              <ion-segment value="custom">
+                <ion-segment-button value="custom">
+                  <ion-label>Pedigree</ion-label>
+                </ion-segment-button>
+                <ion-segment-button value="segment">
+                  <ion-label>Dogchow</ion-label>
+                </ion-segment-button>
+                <ion-segment-button value="buttons">
+                  <ion-label>Ganador</ion-label>
+                </ion-segment-button>
+              </ion-segment>
+            
+          </ion-card>
+          
+
+
+          
+      </ion-toolbar>
 
 
 <ion-content>
-    <ion-row>
-        <ion-col sizeLg="6" sizeMd="12" sizeXs="12">
-            <ion-card>
-                <img alt="Silhouette of mountains" src="assets/imagenes/12.jpg" />
-                <ion-card-header>
-                  <ion-card-title>Nombre del gato</ion-card-title>
-                  <ion-card-subtitle>Raza-Gato</ion-card-subtitle>
-                </ion-card-header>
-
-                <ion-card-content>
-                  
-                  Descriptio: 
-
-                  <ion-button>Person</ion-button>
-                     
-                  Ubicación: 
-
-                  <ion-button>Adoptar</ion-button>
-
-                </ion-card-content>
-              </ion-card>
-              <ion-card>
-                <img alt="Silhouette of mountains" src="assets/imagenes/13.jpg" />
-                <ion-card-header>
-                  <ion-card-title>Nombre del gato</ion-card-title>
-                  <ion-card-subtitle>Raza-Gato</ion-card-subtitle>
-                </ion-card-header>
-                <ion-card-content>
-                  
-                  Descriptio: 
-
-                  <ion-button>Person</ion-button>
-                     
-                  Ubicación: 
-
-                  <ion-button>Adoptar</ion-button>
-
-                </ion-card-content>
-              </ion-card>
-              <ion-card>
-                <img alt="Silhouette of mountains" src="assets/imagenes/6.jpg" />
-                <ion-card-header>
-                  <ion-card-title>Nombre del gato</ion-card-title>
-                  <ion-card-subtitle>Raza-Gato</ion-card-subtitle>
-                </ion-card-header>
-                <ion-card-content>
-                  
-                  Descriptio: 
-
-                  <ion-button>Person</ion-button>
-                     
-                  Ubicación: 
-
-                  <ion-button>Adoptar</ion-button>
-
-                </ion-card-content>
-              </ion-card>
-        </ion-col>
-    </ion-row>
+  <br>
+  <br>
+  <ion-content>
+    <ion-slides [options]="slideOpts">
+      <ion-slide *ngFor="let imagenes of banners" >
+        <img src="assets/imagenes/15.jfif"  width="50px"/>
+        <img src="assets/imagenes/16.jpg" />
+         <img src="assets/imagenes/17.jpg" />
+        
+      </ion-slide>
+    </ion-slides>
+  </ion-content>
 </ion-content>
         
           

@@ -5,7 +5,28 @@ const routes: Routes = [
   {
     path: '',
     loadChildren: () => import('./tabs/tabs.module').then(m => m.TabsPageModule)
-  }
+  },
+  {
+    path: 'tab4',
+    loadChildren: () => import('./tab4/tab4.module').then( m => m.Tab4PageModule)
+  },
+  {
+    path: 'tab5',
+    loadChildren: () => import('./tab5/tab5.module').then( m => m.Tab5PageModule)
+  },
+  {
+    path: 'perro',
+    loadChildren: () => import('./perro/perro.module').then( m => m.PerroPageModule)
+  },
+  {
+    path: 'pata',
+    loadChildren: () => import('./pata/pata.module').then( m => m.PataPageModule)
+  },
+  {
+    path: 'notifiqueishons',
+    loadChildren: () => import('./notifiqueishons/notifiqueishons.module').then( m => m.NotifiqueishonsPageModule)
+  },
+  
 ];
 @NgModule({
   imports: [
